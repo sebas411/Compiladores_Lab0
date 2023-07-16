@@ -1,0 +1,9 @@
+class AdvancedMath inherits Math {
+    multiply(a: Int, b: Int): Int {
+        a * b
+    };
+
+    divide(a: Int, b: Int): Int {
+        a / b
+    };
+};
