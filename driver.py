@@ -9,7 +9,7 @@ from antlr4.tree.Trees import Trees
 class MyListener(YAPLListener):
     def visitErrorNode(self, node):
         token = node.getSymbol()
-        print(f"Error en la línea {token.line}: Carácter no reconocido '{token.text}'")
+        print(f"Error en la línea {token.line}: Lexema no reconocido '{token.text}'")
 
 def visualize_tree(node, dot):
     if isinstance(node, TerminalNode):
