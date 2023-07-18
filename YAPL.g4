@@ -21,7 +21,7 @@ OBJECT_ID:  [a-z][a-zA-Z0-9_]*;
 
 STRING: '"' (~["\\\u0000-\u001F] | '\\' (["\\/bfnrt] | 'u' [0-9a-fA-F]{4}))* '"';
 LINE_COMMENT:'--' .*? [\n\r] -> skip;
-BLOCK_COMMENT: ('...' .*? '...'| '(*' .*? '*)') -> skip;
+BLOCK_COMMENT: ('(*' .*? '*)') -> skip;
 INTEGER: [0-9]+;
 WS: [ \t\n\r\f] + -> skip;
 

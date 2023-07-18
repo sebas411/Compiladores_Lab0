@@ -1,9 +1,9 @@
-class Math {
-    add(a: Int, b: Int): Int {
-        a + b
+class StringUtils {
+    print(str: String): SELF_TYPE {
+        out_string(str)
     };
 
-    subtract(a: Int, b: Int): Int {
-        a - b
+    concat(str1: String, str2: String): String {
+        str1 + str2
     };
 };
